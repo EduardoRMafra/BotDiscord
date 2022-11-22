@@ -9,28 +9,41 @@ body{
     background-color: #223;
 }
 nav{
-    display: inline-flex;
     width: 100%;
-    height: 120px;
+    height: 65px;
     background-color: #000;
-    padding: 10px 25px;
-
 }
 
 nav div{
     display: inline-flex;
+    padding: 10px 25px;
 }
-
 nav div img{
-    margin-right: 20px;
-    height: 48px;
+    margin-right: 10px;
+    height: 45px;
 }
 
 nav div ul li{
     display: inline-block;
-    margin: 10px;
     font-size: 20px;
+    font-weight: 500;
+    margin: 10px 16px;
 }
 nav div ul li a{
     color: #fff;
+}
+
+nav div.navbar_direita{
+    float: right;
+}
+nav div.navbar_direita ul li{
+    margin: 6px;
+}
+
+nav div.navbar_direita ul li a{
+    display: block;
+    color: #000;
+    border-radius: 50px;
+    background-color: #fff;
+    padding: 5px 1rem;
 }
