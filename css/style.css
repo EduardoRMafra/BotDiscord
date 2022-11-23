@@ -56,8 +56,10 @@ main{
     display: block;
     background-image: url("/img/discord_banner_placeholder.png");
     height: 50rem;
-    background-size: 200%;
+    background-size: 100%;
     animation: move 120s linear infinite;
+    padding: 15rem;
+    text-align: center;
 }
 
 @keyframes move {
@@ -68,4 +70,43 @@ main{
     100%{
         background-position: -2160px 100%;
     }
+}
+
+main form{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 3rem;
+    gap: 20px;
+}
+main form h1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: #fff;
+    font-size: 55px;
+    font-weight: bold;
+}
+
+main form input{
+    grid-column-start: 1;
+    padding: 1rem;
+    border-radius: 5px;
+}
+main form button{
+    grid-column-start: 2;
+    background-color: #558;
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 1rem;
+    border-radius: 5px;
+}
+main form a{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: #558;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0.5rem 15rem;
+    border-radius: 5px;
 }
