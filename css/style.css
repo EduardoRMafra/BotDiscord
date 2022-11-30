@@ -29,6 +29,22 @@ nav div{
     display: inline-flex;
     padding: 10px 25px;
 }
+#check{
+    display: none;
+}
+.checkbtn{
+    padding: 5px;
+    padding-right: 20px;
+    font-size: 30px;
+    columns: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+nav img{
+    height: 55px;
+    color: #fff;
+}
 nav div img{
     margin-right: 10px;
     height: 45px;
@@ -58,8 +74,8 @@ input{
     background-color: rgba(174, 174, 174, 0.751);
     font-size: 20px;
 }
-nav div input{
-    margin: 0 200px;
+nav input{
+    margin-left: 100px;
     height: 50px;
     width: 500px;
 }
@@ -77,6 +93,33 @@ nav div.navbar_direita ul li a{
     border-radius: 50px;
     background-color: #fff;
     padding: 7px 1.2rem;
+}
+
+div.navbar_mobile{
+    display: none;
+}
+
+div.navbar_mobile ul{
+    display: block;
+    background-color: #223;
+    width: 100%;
+}
+
+input#check:checked ~ div.navbar_mobile{
+    display: block;
+}
+
+div.navbar_mobile ul li{
+    display: block;
+    margin: 0;
+}
+div.navbar_mobile ul li a{
+    display: block;
+    color: #fff;
+    padding: 10px;
+}
+div.navbar_mobile ul li a:hover{
+    background-color: #334;
 }
 
 main{
@@ -174,4 +217,21 @@ footer ul li a{
 }
 footer ul li a:hover{
     color: #779;
+}
+@media (max-width: 1200px){
+    .checkbtn{
+        display: inline-block;
+    }
+    nav div img{
+        display: none;
+    }
+    nav div ul li a{
+        display: none;
+    }
+    nav input{
+       display: none;
+    }
+    nav div.navbar_direita ul li a{
+        display: none;
+    }
 }
