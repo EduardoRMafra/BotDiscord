@@ -7,7 +7,7 @@
 }
 body{
     background-color: #223;
-    font-family: sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #fff;
 }
 ::placeholder { 
@@ -39,13 +39,7 @@ nav img{
     color: #fff;
 }
 
-nav div ul li{
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 10px 16px;
-}
-nav div ul li a{
+.navbar a{
     color: #888;
 
 }
@@ -53,14 +47,22 @@ nav div ul li a{
     display: inline-block;
 }
 .pc img{
-    height: 45px;
+    height: 47px;
     float: left;
+    margin-right: 10px;
 }
-.pc ul li a:hover{
+.left a:hover{
     color: #bbb;
 }
-.pc ul li a:active{
+.left a:active{
     color: #fff;
+}
+
+.pc ul a{
+    display: inline-block;
+    margin: 10px 16px;
+    font-size: 20px;
+    font-weight: 500;
 }
 
 input{
@@ -78,15 +80,18 @@ nav input{
 .left{
     float: left;
 }
+
 .right{
     float: right;
 }
-.right ul li{
-    margin: 6px;
+.right li{
     font-size: 16px;
+    font-weight: 100;
 }
 
-.right ul li a{
+.right a{
+    margin: 6px;
+
     display: block;
     color: #000;
     border-radius: 50px;
@@ -104,7 +109,7 @@ nav input{
     width: 100%;
 }
 
-input#check:checked ~ div.mobile{
+input#check:checked ~ .mobile{
     display: block;
 }
 
