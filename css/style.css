@@ -25,7 +25,7 @@ nav{
     background-color: #13131f;
 }
 
-nav div{
+.navbar{
     display: inline-flex;
     padding: 10px 25px;
 }
@@ -45,7 +45,7 @@ nav img{
     height: 55px;
     color: #fff;
 }
-nav div img{
+.pc img{
     margin-right: 10px;
     height: 45px;
 }
@@ -79,15 +79,15 @@ nav input{
     height: 50px;
     width: 500px;
 }
-nav div.navbar_direita{
+.right{
     float: right;
 }
-nav div.navbar_direita ul li{
+.right ul li{
     margin: 6px;
     font-size: 16px;
 }
 
-nav div.navbar_direita ul li a{
+.right ul li a{
     display: block;
     color: #000;
     border-radius: 50px;
@@ -95,30 +95,30 @@ nav div.navbar_direita ul li a{
     padding: 7px 1.2rem;
 }
 
-div.navbar_mobile{
+.mobile{
     display: none;
 }
 
-div.navbar_mobile ul{
+.mobile ul{
     display: block;
     background-color: #223;
     width: 100%;
 }
 
-input#check:checked ~ div.navbar_mobile{
+input#check:checked ~ div.mobile{
     display: block;
 }
 
-div.navbar_mobile ul li{
+.mobile ul li{
     display: block;
     margin: 0;
 }
-div.navbar_mobile ul li a{
+.mobile ul li a{
     display: block;
     color: #fff;
     padding: 10px;
 }
-div.navbar_mobile ul li a:hover{
+.mobile ul li a:hover{
     background-color: #334;
 }
 
