@@ -1,5 +1,4 @@
-# BotDiscordSite
-Recriando o site Discord Bot para fins de treino
+# Recriando o site Discord Bot para fins de treino
 ![inicio](https://user-images.githubusercontent.com/79806533/211165485-fed2ee7e-5853-4307-ab1c-1f1bb2f697d1.png)
 
 ![sobre](https://user-images.githubusercontent.com/79806533/211165489-58407ac7-4f56-4c5b-a9f8-bdf51ef7005f.png)
