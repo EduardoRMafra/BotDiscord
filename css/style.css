@@ -113,22 +113,22 @@ input{
 
 .mobile{
     display: none;
+    margin: 0 10px;
 }
 
 .mobile ul{
     display: block;
     background-color: #223;
+    text-align: center;
+    padding: 10px 0;
     width: 100%;
-}
-
-input#check:checked ~ .mobile{
-    display: block;
 }
 
 .mobile a{
     display: block;
     color: #fff;
-    padding: 10px;
+    font-size: 20px;
+    padding: 8px;
     margin: 0;
 }
 .mobile a:hover{
@@ -268,5 +268,8 @@ footer a:hover{
     }
     .searchField form a{
         padding: 1rem 0;
+    }
+    input#check:checked ~ .mobile{
+        display: block;
     }
 }
