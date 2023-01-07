@@ -137,7 +137,7 @@ input{
 /*Conteúdo principal - campo de pesquisa*/
 .searchField{
     display: block;
-    background-image: url("/img/discord_banner_placeholder.png");
+    background-image: url("../img/discord_banner_placeholder.png");
     height: 110vh;
     animation: move 120s linear infinite;
     padding: 45vh 0;
