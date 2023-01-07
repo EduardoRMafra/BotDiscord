@@ -193,7 +193,7 @@ input#check:checked ~ .mobile{
     background-color: rgb(101, 106, 146);
     color: #fff;
     font-size: 18px;
-    padding: 0.5rem 15rem;
+    padding: 0.5rem 0;
     border-radius: 8px;
 }
 
@@ -259,5 +259,14 @@ footer a:hover{
     }
     .pc input{
        display: none;
+    }
+    .searchField form{
+        width: 500px;
+    }
+    .searchField form h1{
+        font-size: 35px;
+    }
+    .searchField form a{
+        padding: 1rem 0;
     }
 }
