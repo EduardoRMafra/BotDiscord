@@ -14,13 +14,86 @@ body{
     color: #fff;
   }
 
-.navbar{
+/*Barra de navegação info compartilhada*/
+nav{
     display: inline-block;
     position: fixed;
     width: 100%;
     height: 65px;
     background-color: #13131f;
 }
+
+/*Navegação PC*/
+.pc{
+    text-align: center;
+}
+.pc img{
+    height: 47px;
+    float: left;
+    margin: 10px 10px 10px 25px;
+}
+.pc ul a{
+    font-size: 20px;
+    font-weight: 500;
+    color: #888;
+    float: left;
+}
+
+/*Configuração botões da esquerda*/
+.left a:hover{
+    color: #bbb;
+}
+
+.left a{
+    margin: 20px 16px;
+}
+/*Botão da pagina atual selecionado*/
+.left .currentPage{
+    color: #fff;
+}
+
+.left .currentPage:hover{
+    color: #fff;
+}
+
+/*barra de pesquisa*/
+input{
+    padding: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: 0;
+    color: #fff;
+    background-color: rgba(174, 174, 174, 0.751);
+    font-size: 20px;
+}
+
+/*barra de pesquisa pagina sobre*/
+.pc input{
+    height: 47px;
+    width: 30vw;
+    margin: 9px;
+    background-color: rgba(157, 163, 173, 0.397);
+}
+
+/*Configurações botão direita*/
+.right{
+    float: right;
+}
+.right li{
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.right a{
+    margin: 16px 30px;
+    display: block;
+    border-radius: 50px;
+    background-color: #fff;
+    padding: 4px 1.1rem;
+}
+
+/*Btn menu mobile*/
 #check{
     display: none;
 }
@@ -32,69 +105,9 @@ body{
     cursor: pointer;
     display: none;
 }
-
-nav img{
+.checkbtn img{
     height: 55px;
     color: #fff;
-}
-
-.navbar a{
-    color: #888;
-}
-.pc{
-    overflow: hidden;
-}
-.pc img{
-    height: 47px;
-    float: left;
-    margin: 10px 10px 10px 25px;
-}
-.left a:hover{
-    color: #bbb;
-}
-.left a:active{
-    color: #fff;
-}
-
-.pc ul a{
-    display: inline-block;
-    font-size: 20px;
-    font-weight: 500;
-}
-
-input{
-    padding: 1rem;
-    border-radius: 10px;
-    color: #fff;
-    background-color: rgba(174, 174, 174, 0.751);
-    font-size: 20px;
-}
-nav input{
-    margin-left: 100px;
-    height: 50px;
-    width: 500px;
-}
-.left{
-    float: left;
-}
-.left a{
-    margin: 20px 16px;
-}
-.right{
-    float: right;
-}
-.right li{
-    font-size: 16px;
-    font-weight: 100;
-}
-
-.right a{
-    margin: 15px 30px;
-    display: block;
-    color: #000;
-    border-radius: 50px;
-    background-color: #fff;
-    padding: 7px 1.2rem;
 }
 
 .mobile{
@@ -111,22 +124,20 @@ input#check:checked ~ .mobile{
     display: block;
 }
 
-.mobile ul li{
-    display: block;
-    margin: 0;
-}
-.mobile ul li a{
+.mobile a{
     display: block;
     color: #fff;
     padding: 10px;
+    margin: 0;
 }
-.mobile ul li a:hover{
+.mobile a:hover{
     background-color: #334;
 }
 
 main{
     display: block;
     background-image: url("/img/discord_banner_placeholder.png");
+    background-size: cover;
     height: 50rem;
     background-size: 150%;
     animation: move 120s linear infinite;
@@ -216,20 +227,17 @@ footer ul li a{
 footer ul li a:hover{
     color: #779;
 }
-@media (max-width: 1200px){
+@media (max-width: 1000px){
     .checkbtn{
         display: inline-block;
     }
-    nav div img{
+    .pc img{
         display: none;
     }
-    nav div ul li a{
+    .pc a{
         display: none;
     }
-    nav input{
+    .pc input{
        display: none;
-    }
-    nav div.navbar_direita ul li a{
-        display: none;
     }
 }
