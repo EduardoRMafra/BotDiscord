@@ -49,11 +49,7 @@ nav{
     margin: 20px 16px;
 }
 /*Botão da pagina atual selecionado*/
-.left .currentPage{
-    color: #fff;
-}
-
-.left .currentPage:hover{
+.left .currentPage, .left .currentPage:hover{
     color: #fff;
 }
 
